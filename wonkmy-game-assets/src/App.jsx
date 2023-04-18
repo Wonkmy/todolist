@@ -3,13 +3,18 @@ import { useState } from 'react'
 // import viteLogo from '/vite.svg'
 // import './App.css'
 import './style.css'
+import { AssetsCard } from './AssetsCard'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      
+      <AssetsCard/>
+      <AssetsCard/>
+      <AssetsCard/>
+      <AssetsCard/>
+      <AssetsCard/>
     </div>
   )
 }
