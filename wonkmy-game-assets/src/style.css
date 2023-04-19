@@ -5,12 +5,17 @@
 body{
     background: #333;
     color: hsl(200, 100%, 90%);
-    max-width: 1280px;
+    /* max-width: 1280px; */
     padding: 1rem;
     margin: 0 auto;
 }
 .App{
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.Assets-Area{
+    background-color: rgb(11, 96, 171);
     width: 100%;
     height: 100%;
     display: grid;
@@ -20,11 +25,11 @@ body{
 .card{
     width: 300px;
     height: 200px;
-    margin: 0 auto;
-    padding-top: 35px;
+    margin: 5px;
+    padding-bottom: 30px;
     padding-left: 10px;
     gap: 5px;
-    background-color: #6e6e6e;
+    background-color: #574b90;
     border: solid 2px white;
     border-radius: 10px;
     display: flex;
@@ -33,7 +38,7 @@ body{
 }
 
 .assets-title{
-    margin-left: 100px;
+    margin-left: 80px;
     margin-bottom: 10px;
 }
 .assets-icon{
@@ -87,8 +92,31 @@ body{
 }
 
 .user-operate{
+    width: 300px;
+    height: 35px;
     display: flex;
+    flex-direction: row;
     margin-left: 10px;
-    margin-bottom: 65px;
-    padding-right: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-download{
+    width: 75px;
+    height: 30px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: solid 3px rgb(255, 255, 255);
+    cursor: pointer;
+}
+.btn-more-info{
+    width: 120px;
+    margin-right: 30px;
+    color: red;
+    cursor: pointer;
+}
+
+.nav-frame{
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
 }
