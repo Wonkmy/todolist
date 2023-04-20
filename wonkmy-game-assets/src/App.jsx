@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './style.css'
 import { AssetsCard } from './AssetsCard'
 import {TopNav} from './TopNav'
+import {CreateNewAssets} from './CreateNewAssets'
 
 import assets_icon from '/1.png'
 import max from '/1-06.png'
@@ -19,19 +20,23 @@ function App() {
     ps:ps,
   }
 
+  function OnOpenCreateNewAssets(){
+      <CreateNewAssets />
+  }
+
   return (
-    <div className='App'>
-      <TopNav />
-      <div className="Assets-Area">
-        <AssetsCard
-          title={"一把斧子"}
-          iconSrc={assets_icon}
-          author={"作者:王启明"}
-          date={"日期:2023-04-19"}
-          softwareIconSrc={softwareIconSrc}
-          assetsSize={"资源大小:10M"} />
+      <div className='App'>
+        <TopNav onClick={OnOpenCreateNewAssets}/>
+        <div className="Assets-Area">
+          <AssetsCard
+            title={"一把斧子"}
+            iconSrc={assets_icon}
+            author={"作者:王启明"}
+            date={"日期:2023-04-19"}
+            softwareIconSrc={softwareIconSrc}
+            assetsSize={"资源大小:10M"} />
+        </div>
       </div>
-    </div>
   )
 }
 
